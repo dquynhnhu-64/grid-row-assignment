@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* THAY ĐỔI VỊ TRÍ THEO YÊU CẦU BÀI TẬP BẰNG CÁCH BỎ COMMENT (//) */
+
+/* Yêu cầu 2: Ô 1 bắt đầu từ đường 1 đến đường 3 (chiếm 2 hàng) */
+.item1 {
+    grid-row: 1 / 3;
+    background-color: #ffb74d;
+}
+
+/* Yêu cầu 3: Thay đổi thành grid-row: 2 / 4 */
+/*
+.item1 {
+    grid-row: 2 / 4;
+    background-color: #ffb74d;
+}
+*/
+
+/* Yêu cầu 4: Thay đổi thành grid-row: span 2 */
+/*
+.item1 {
+    grid-row: span 2;
+    background-color: #ffb74d;
+}
+*/
+
+

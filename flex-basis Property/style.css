@@ -1,0 +1,116 @@
+/* Reset CSS cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+.demo-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.demo-card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.container {
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #f8fafc;
+}
+
+.item {
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* --- Ví dụ 1: flex-basis với px --- */
+.container.ex1 {
+    display: flex;
+    gap: 10px;
+}
+
+.ex1 .item {
+    background-color: #93c5fd;
+    color: #1e3a8a;
+}
+
+.ex1 .item1 { flex-basis: 200px; }
+.ex1 .item2 { flex-basis: 100px; }
+.ex1 .item3 { flex-basis: 150px; }
+
+/* --- Ví dụ 2: flex-direction: column --- */
+.container.ex2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 400px;
+}
+
+.ex2 .item {
+    flex-basis: 100px;
+    background-color: #86efac;
+    color: #14532d;
+}
+
+/* --- Ví dụ 3: flex-basis với % --- */
+.container.ex3 {
+    display: flex;
+    gap: 10px;
+}
+
+.ex3 .item-half {
+    flex-basis: 50%;
+    background-color: #fca5a5;
+    color: #7f1d1d;
+}
+
+/* --- Ví dụ 4: Kết hợp flex-basis và flex-grow --- */
+.container.ex4 {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    gap: 10px;
+}
+
+.ex4 .item {
+    background-color: #bae6fd;
+    color: #0369a1;
+}
+
+.ex4 .g1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.ex4 .g2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+
+.ex4 .g3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
